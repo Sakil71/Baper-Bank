@@ -10,7 +10,7 @@
         const totalAmountString = ammountDollar.innerText;
         const totalAmount = parseFloat(totalAmountString);
             // step 4
-        const totalDepositeAmount = inputAmmount + totalAmount;
+        // const totalDepositeAmount = inputAmmount + totalAmount;
     
             // step 5
         const oldbalance = document.getElementById('old-balance');
@@ -21,11 +21,12 @@
         const newDepositeBalance = totalOldBalance + inputAmmount;
     
         if(inputAmmount > 0){
-            ammountDollar.innerText = totalDepositeAmount;
+            // ammountDollar.innerText = totalDepositeAmount;
+            ammountDollar.innerText = inputAmmount;
             oldbalance.innerText = newDepositeBalance;
         }
         else{
-            alert('Please select greater than "0"');
+            alert('Please select an amount');
         }
         
         inputField.value = '';

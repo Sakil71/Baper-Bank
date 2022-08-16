@@ -5,6 +5,11 @@
             const withdrawField = document.getElementById('withdraw-field');
             const withdrawAmountString = withdrawField.value;
             const withdrawAmount = parseFloat(withdrawAmountString);
+
+            if(isNaN(withdrawAmount)){
+                alert('Select an amount');
+                return;
+            }
             // step 3
             const withdrawOld = document.getElementById('withdraw-old');
             const withdrawElementString = withdrawOld.innerText;
